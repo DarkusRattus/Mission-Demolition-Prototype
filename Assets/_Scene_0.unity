@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942e5852811881942a005667ce4e5989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchPoint: {fileID: 0}
 --- !u!1 &996545054
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +385,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1202635457}
+  - 122: {fileID: 1202635458}
   m_Layer: 0
   m_Name: LaunchPoint
   m_TagString: Untagged
@@ -404,6 +406,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 584523106}
   m_RootOrder: 0
+--- !u!122 &1202635458
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202635456}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4290295992
+  m_Size: 1
 --- !u!1 &1560864796
 GameObject:
   m_ObjectHideFlags: 0

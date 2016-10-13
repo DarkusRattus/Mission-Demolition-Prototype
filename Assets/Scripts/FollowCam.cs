@@ -20,10 +20,26 @@ public class FollowCam : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
-        if (poi == null) return; // return if there is no poi
+	void FixedUpdate () {
+        Vector3 destination;
 
-        Vector3 destination = poi.transform.position; // Get the position of the poi
+        if (poi == null)
+        {
+            destination = Vector3.zero; // return if there is no poi
+        }
+        else
+        {
+            destination = poi.transform.position; // Get the position of the poi
+            if (poi.tag == "Projectile")
+            {
+                if (poi.GetComponent<Rigidbody>().IsSleeping())
+                {
+                    poi = null;
+                    return;
+                }
+            }
+        }
+
 
         // Limit the X & Y to minimum values
         destination.x = Mathf.Max(minXY.x, destination.x);

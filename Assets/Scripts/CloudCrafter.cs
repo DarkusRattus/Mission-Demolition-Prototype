@@ -19,7 +19,7 @@ public class CloudCrafter : MonoBehaviour {
 
     void Awake()
     {
-        cloudInstances = new GameObject(numClouds); // Make an array large enough to hold all the clouds
+        cloudInstances = new GameObject[numClouds]; // Make an array large enough to hold all the clouds
         GameObject anchor = GameObject.Find("CloudAnchor");
         GameObject cloud; 
         for(int i = 0; i < numClouds; i++)

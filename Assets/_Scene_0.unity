@@ -911,6 +911,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1203671299}
   - 120: {fileID: 1203671298}
+  - 114: {fileID: 1203671300}
   m_Layer: 0
   m_Name: ProjectileLine
   m_TagString: Untagged
@@ -973,6 +974,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1203671300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203671297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94706fd163133244b4c66a4cc8decce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDist: 0.1
+  _____________: 0
+  line: {fileID: 0}
+  points: []
 --- !u!1001 &1220412141
 Prefab:
   m_ObjectHideFlags: 0
